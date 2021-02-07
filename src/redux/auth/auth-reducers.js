@@ -1,11 +1,5 @@
-import { combineReducers, createReducer, createSlice } from "@reduxjs/toolkit";
-import {
-  getCurrentUserInformation,
-  register,
-  login,
-  logout,
-  fetchCurrentUser,
-} from "./auth-actions";
+import { createSlice } from "@reduxjs/toolkit";
+import { register, login, logout, fetchCurrentUser } from "./auth-actions";
 
 const initialState = {
   user: { name: null, email: null },
