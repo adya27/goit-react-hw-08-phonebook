@@ -91,6 +91,7 @@ function RegistrationForm({ dispatchRegister }) {
 
         <input
           type="submit"
+          className="btn btn-outline-primary"
           disabled={
             watch("password") === "" ||
             watch("name") === "" ||

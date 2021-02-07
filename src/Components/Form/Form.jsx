@@ -56,7 +56,7 @@ function Form({ dispatchContact }) {
           name="email"
           ref={register}
         /> */}
-        <input type="submit" />
+        <input className="btn btn-outline-primary" type="submit" />
       </form>
     </div>
   );

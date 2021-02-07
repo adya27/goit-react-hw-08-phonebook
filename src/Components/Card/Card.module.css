@@ -27,3 +27,7 @@ h3 {
   border: 1px solid grey;
   border-radius: 5px;
 }
+
+.button {
+  margin: 10px;
+}

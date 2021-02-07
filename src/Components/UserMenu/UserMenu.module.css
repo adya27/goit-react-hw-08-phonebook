@@ -1,0 +1,14 @@
+.horizontal {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.item {
+  max-width: 300px;
+  margin-top: 10px;
+  margin-right: 20px;
+}

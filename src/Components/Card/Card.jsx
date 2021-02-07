@@ -1,4 +1,6 @@
+import Button from "react-bootstrap/Button";
 import React from "react";
+import { ListGroup } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/phonebook/actions";
 
@@ -11,14 +13,19 @@ function Card({ contact }) {
   const handlerDeleteContact = () => dispatch(deleteContact(id));
   return (
     <li className={styles.container}>
-      <ul>
-        <li>{name}</li>
+      <ListGroup>
+        <ListGroup.Item>{name}</ListGroup.Item>
 
-        <li>{number}</li>
-      </ul>
-      <button type="button" onClick={handlerDeleteContact}>
+        <ListGroup.Item>{number}</ListGroup.Item>
+      </ListGroup>
+      <Button
+        className={styles.button}
+        variant="outline-danger"
+        type="button"
+        onClick={handlerDeleteContact}
+      >
         Delete
-      </button>
+      </Button>
     </li>
   );
 }

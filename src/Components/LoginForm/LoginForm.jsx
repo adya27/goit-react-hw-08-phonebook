@@ -30,7 +30,7 @@ function LoginForm({ dispatchContact }) {
 
   return (
     <div className={styles.container}>
-      <h3>Welcome to Login!</h3>
+      <h3>Please Login!</h3>
       <form className={styles.form} id="form" onSubmit={handleSubmit(onSubmit)}>
         <input
           className={styles.input}
@@ -57,7 +57,7 @@ function LoginForm({ dispatchContact }) {
           </span>
         )}
 
-        <input type="submit" />
+        <input className="btn btn-outline-primary" type="submit" />
       </form>
     </div>
   );
